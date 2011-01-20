@@ -1,0 +1,42 @@
+! PhpWikiToMediaWikiManual
+
+!! Introduction
+
+This tool can help you quickly convert a phpwiki page into a mediawiki page.
+It's not a batch tool, but it can assist you build one.
+
+!! Requirements
+
+It requires php5 to run.
+Usually the =php5-cli= package is all you need.
+
+<verbatim>
+sudo aptitude install php5-cli
+</verbatim>
+
+!! How it works
+
+It reads the phpwiki page content from STDIN, and outputs the content converted
+to mediawiki format to STDOUT.
+
+!!! Example
+
+<verbatim>
+$ php5 ./phpwiki2mediawiki.php < Sample.phpwiki > Sample.mediawiki
+</verbatim>
+
+No additional format checks are done.
+If the format is not phpwiki, then you're basically screwed.
+It helped me at least.
+
+Good luck!
+
+!! Where does this come from?
+
+It comes from another phpwiki-to-mediawiki conversion tool I've seen
+on the Internetz, plus a few more bonus fixes thrown in.
+Here's the original source of inspiration:
+
+http://www.webforce.co.nz/phpwiki2mediawiki.php.txt
+
+
